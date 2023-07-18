@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.TBmail.EmailService.UserCategory;
+import com.TBmail.EmailService.Collections.UserCategory;
 
 public interface UserCategoryRepository extends MongoRepository<UserCategory,String> {
 	UserCategory findByUserCategoryId(String UserCategoryId);

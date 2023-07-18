@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.TBmail.EmailService.NewsCategory;
+import com.TBmail.EmailService.Collections.NewsCategory;
 
 public interface NewsCategoryRepository extends MongoRepository<NewsCategory,String>{
 	NewsCategory findByNewsCategoryId(String NewsCategoryId);

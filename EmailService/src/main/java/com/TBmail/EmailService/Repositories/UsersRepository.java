@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.TBmail.EmailService.User;
+import com.TBmail.EmailService.Collections.User;
 
 public interface UsersRepository extends MongoRepository<User, String> {
 	Optional<User> findByUserId(String uid);

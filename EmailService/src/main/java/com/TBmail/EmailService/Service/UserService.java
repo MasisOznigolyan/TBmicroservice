@@ -6,7 +6,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.TBmail.EmailService.User;
+import com.TBmail.EmailService.Collections.User;
 import com.TBmail.EmailService.Repositories.UsersRepository;
 import com.TBmail.EmailService.Response.UserResponse;
 

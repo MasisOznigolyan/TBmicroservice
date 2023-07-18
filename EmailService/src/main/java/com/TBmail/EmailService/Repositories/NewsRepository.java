@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.TBmail.EmailService.News;
+import com.TBmail.EmailService.Collections.News;
 
 public interface NewsRepository extends MongoRepository<News, String>{
 	News findByNewsId(News  news);

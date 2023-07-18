@@ -4,8 +4,7 @@ import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.TBmail.EmailService.UserEmail;
-
+import com.TBmail.EmailService.Collections.UserEmail;
 public interface UserEmailRepository extends MongoRepository<UserEmail,String> {
 
 	@SuppressWarnings("unchecked")

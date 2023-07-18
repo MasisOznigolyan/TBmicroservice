@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.TBmail.EmailService.User;
+import com.TBmail.EmailService.Collections.User;
 import com.TBmail.EmailService.Response.UserResponse;
 import com.TBmail.EmailService.Service.UserService;
 
@@ -20,9 +20,9 @@ public class UserController {
 	UserService userService;
 	
 	@GetMapping("/users/{id}")
-	public ResponseEntity<UserResponse> getUserDetails(@PathVariable("id") String id){
+	public ResponseEntity<UserResponse> getUserDetails(@PathVariable("id") String UserId){
 		
-		UserResponse user=userService.getUserByUserId(id);
+		UserResponse user=userService.getUserByUserId(UserId);
 		
 		
 		return ResponseEntity.status(HttpStatus.OK).body(user);

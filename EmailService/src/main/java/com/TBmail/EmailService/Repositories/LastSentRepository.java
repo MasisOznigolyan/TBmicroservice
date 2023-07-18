@@ -4,8 +4,9 @@ import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.TBmail.EmailService.LastSent;
-import com.TBmail.EmailService.UserEmail;
+import com.TBmail.EmailService.Collections.LastSent;
+import com.TBmail.EmailService.Collections.UserEmail;
+
 
 public interface LastSentRepository extends MongoRepository<LastSent, String> {
     List<LastSent> findAll();

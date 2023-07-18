@@ -18,6 +18,16 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import com.TBmail.EmailService.Collections.Email;
+import com.TBmail.EmailService.Collections.LastSent;
+import com.TBmail.EmailService.Collections.News;
+import com.TBmail.EmailService.Collections.NewsCategory;
+import com.TBmail.EmailService.Collections.User;
+import com.TBmail.EmailService.Collections.UserCategory;
+import com.TBmail.EmailService.Collections.UserEmail;
+import com.TBmail.EmailService.Parser.GetHead;
+import com.TBmail.EmailService.Parser.LastNews;
+import com.TBmail.EmailService.Parser.MailContent;
 import com.TBmail.EmailService.Service.UserService;
 
 @EnableScheduling
